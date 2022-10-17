@@ -250,7 +250,7 @@ section h1 {
 .cta {
     height: 50ch;
     width: 100%;
-    background-image: url(../Imagens/Renner-colecao-primavera-verao-2022.jpg);
+    background-image: url(../images/Renner-colecao-primavera-verao-2022.jpg);
     background-size: cover;
     /*AJUSTANDO A IMAGEM*/
     background-position: center 30%;
@@ -262,7 +262,7 @@ section h1 {
 .cart-outline{
     height: 40ch;
     width: 100%;
-    background-image: url(../Imagens/bottero-outono-inverno.jpg);
+    background-image: url(../images/bottero-outono-inverno.jpg);
     background-size: cover;
     /*AJUSTANDO A IMAGEM*/
     background-position: center 73%;

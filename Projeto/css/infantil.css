@@ -8,7 +8,6 @@
     border: none;
 }
 
-
 .produto{
     background-image: url(../images/nenem2.jpg);
     background-repeat: no-repeat;
@@ -22,8 +21,6 @@
     font-size: 4rem;
     background-color: #FFD400;
     color: WHITE;   
-
-
 }
 
 .produto h2{
@@ -160,6 +157,11 @@ header {
     transition: all .35s ease;
     background-color: #fff;
     padding: 14px 14%;
+}
+
+header h1 {
+    font-style: italic;
+    color: #111;
 }
 
 .cabecalho-link {

@@ -1,9 +1,40 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}   
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
 
-#titulo{
+body header {
+    background: rgb(179, 174, 175);
+    color: rgb(59, 57, 57);
+    font-weight: bold;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+}
+
+header h1 {
+    font-style: italic;
+    color: #111;
+}
+
+#titulo {
     font-family: sans-serif;
     color: #000000;
     margin-left: 7%;
@@ -15,11 +46,11 @@
     margin-left: 10%;
 }
 
-fieldset{
-    border:0;
+fieldset {
+    border: 0;
 }
 
-body{
+/*body {
     background-color: #f0f8ff;
     font-family: sans-serif;
     font-size: 1em;
@@ -27,9 +58,12 @@ body{
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
-}
+}*/
 
-input, select, textarea, button{
+input,
+select,
+textarea,
+button {
     border-radius: 5px;
 }
 
@@ -37,36 +71,119 @@ input, select, textarea, button{
     margin-bottom: 1em;
 }
 
-.campo label{
+.campo label {
     margin-bottom: 0.2em;
-    color:blanchedalmond
+    color: blanchedalmond;
     display: block;
 }
 
-fieldset.grupo .campo{
+fieldset.grupo .campo {
     float: left;
     margin-right: 1em;
 }
 
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea
-    padding: 0.2em;
-    border: 1px solid #ffe0d5;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2)
-    display: block;
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+padding: 0.2em;
+border: 1px solid #ffe0d5;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+display: block;
 }
 
-.campo select option{
+.campo select option {
     padding-right: 1em;
 }
 
-.campo input:focus, .campo select:facus, .campo textarea:focus {
+.campo input:focus,
+.campo select:facus,
+.campo textarea:focus {
     background: #e0e0f8;
 }
 
 
 .botao:hover {
     background: #ccbbff;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cabecalho-link {
+    display: flex;
+    gap: 3rem;
+}
+
+.cabecalho-link ul {
+    display: flex;
+}
+
+.cabecalho-link ul li {
+    padding: 10px;
+}
+
+.cabecalho-link a {
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cabecalho-link a:hover {
+    color: #c8815f;
+}
+
+.icon span {
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon span:hover {
+    color: #c8815f;
+}
+
+#contato {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.meio-contato li {
+    margin-bottom: 15px;
+}
+
+.meio-contato li a {
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.ultimo-texto {
+    text-align: center;
+    background-color: #555;
+    color: #fff;
 }

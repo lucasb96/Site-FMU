@@ -1,0 +1,185 @@
+/*body {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+body header {
+  background: #FFFFE0;
+  color: rgb(59, 57, 57);
+  font-weight: bold;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  position: fixed;
+  background: transparent;
+  transition: all .35s ease;
+}
+
+header h1 {
+    font-style: italic;
+    color: #111;
+}
+
+#formulario {
+  margin: 120px 50px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+}
+
+small {
+  color: gray;
+  font-size: 15px;
+}
+
+em {
+  color: gray;
+  font-size: 17px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+p.gen {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+input {
+  border-radius: 15px;
+  border: none;
+  width: 280px;
+  height: 40px;
+  background-color: #EEE8AA;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.cadastrar input {
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #BDB76B;
+  font-weight: bold;
+  color: black;
+  width: 150px;
+  height: 40px;
+}
+
+.datanasc input {
+  padding-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.genero input {
+  width: 90px;
+  height: 20px;
+
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.cabecalho-link {
+  display: flex;
+  gap: 3rem;
+}
+
+.cabecalho-link ul {
+  display: flex;
+}
+
+.cabecalho-link ul li {
+  padding: 10px;
+}
+
+.cabecalho-link a {
+  color: #111;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.cabecalho-link a:hover {
+  color: #c8815f;
+}
+
+.icon span {
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.icon span:hover {
+  color: #c8815f;
+}
+
+
+
+section {
+  padding-top: 4rem;
+
+}
+
+#contato {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-around;
+  background-color: #111;
+  padding: 8rem;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3 {
+  color: #fff;
+  font-size: 23px;
+  margin-bottom: 1.6rem;
+}
+
+.meio-contato h5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+.meio-contato li {
+  margin-bottom: 15px;
+}
+
+.meio-contato li a {
+  display: block;
+  color: #555;
+  font-weight: 600;
+  transition: all .35s ease;
+}
+
+.ultimo-texto {
+  text-align: center;
+  background-color: #555;
+  color: #fff;
+}

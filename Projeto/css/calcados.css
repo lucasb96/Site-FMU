@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+
+}
+
+.background {
+    background-image: url(../images/novacapacalcado.3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    max-width: 100%;
+    height: 60em;
+
+}
+
+
+
+body header {
+    background: rgb(179, 174, 175);
+    color: rgb(59, 57, 57);
+    font-weight: bold;
+    padding: 30px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-color: #fff;
+    padding: 14px 14%;
+}
+
+header h1 {
+    font-style: italic;
+    color: #111;
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding: 0 24px;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-row div {
+    /* flex-grow / flex-shrink / flex-basis */
+    flex: 1 1 250px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.gallery-row img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.gallery p {
+    font-weight: bold;
+}
+
+.gallery-row figcaption {
+    text-align: center;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cabecalho-link {
+    display: flex;
+    gap: 3rem;
+}
+
+.cabecalho-link ul {
+    display: flex;
+}
+
+.cabecalho-link ul li {
+    padding: 10px;
+}
+
+.cabecalho-link a {
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cabecalho-link a:hover {
+    color: #c8815f;
+}
+
+.icon span {
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon span:hover {
+    color: #c8815f;
+}
+
+section {
+    padding-top: 4rem;
+
+}
+
+section h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    background: rgb(175, 173, 174);
+}
+
+.container-card-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.cards img {
+    width: 300px;
+    height: auto;
+    transition: 0.35s ease;
+}
+
+.cards img:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+
+.cta {
+    padding: 7rem 0 0 2.5rem;
+    line-height: 4rem;
+
+}
+
+.cta h1 {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(194, 48, 48);
+    font-style: italic;
+
+}
+
+.cta p {
+    font-size: 20px;
+    color: #000000;
+    font-style: italic;
+}
+
+.cta button {
+    background-color: #000000;
+    padding: 1rem 2rem 1rem;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(255, 245, 245);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3%;
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+
+}
+
+.container img:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.roupa img {
+    width: 300px;
+    height: auto;
+}
+
+.roupa {
+    background-color: rgb(179, 174, 175);
+    color: #fff;
+    font-size: 17px;
+}
+
+#contato {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.meio-contato li {
+    margin-bottom: 15px;
+}
+
+.meio-contato li a {
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.ultimo-texto {
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}

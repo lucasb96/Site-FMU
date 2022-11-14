@@ -1,0 +1,72 @@
+body {
+	font-family: 'Lato', sans-serif;
+	background-color:#FFFFE0;
+	color: lightslategray;
+	font-weight: bolder
+
+}
+a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	color: burlywood;
+	font-weight: bolder
+}
+
+#login {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+.email input {
+	font-family: 'Lato', sans-serif;
+	border-radius: 15px;
+	border: none;
+	width: 250px;
+	height: 40px;
+	padding-left: 20px;
+	background-color: #EEE8AA;
+	color: black;
+	font-size: 20px;
+}
+
+.senha input{
+	font-family: 'Lato', sans-serif;
+	border-radius: 15px;
+	border: none;
+	width: 250px;
+	height: 40px;
+	padding-left: 20px;
+	background-color: #EEE8AA;
+	color: black;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.entrar input{
+	font-family: 'Lato', sans-serif;
+	cursor: pointer;
+	width: 120px;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+	background-color: #BDB76B;
+	color: black;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+input::placeholder {
+	color: lightslategray;
+}
+
+h1 {
+	color: lightslategray;
+}
+
+.caixa img {
+	width: 115px;
+
+}

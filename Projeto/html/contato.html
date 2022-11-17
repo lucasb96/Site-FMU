@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.jpeg">
     <title>Beyond Style Model | Cadastro</title>
 </head>
 
@@ -54,37 +55,33 @@
         </header>
     </div>
 
-    <div>
+    <div id="formulario">
         <h1>Formulário de contato</h1>
         <p>Complete suas informações</p>
         <br>
+
+
+        <form>
+            <fieldset>
+                <div>
+                    <label>Nome</label>
+                    <input type="text" name="Nome" id="nome">
+                </div>
+
+                <div>
+                    <label>Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+            </fieldset>
+
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </form>
     </div>
 
-    <form>
-        <fieldset>
-            <div>
-                <label>Nome</label>
-                <input type="text" name="Nome" id="nome">
-            </div>
-
-            </div>
-            <label>Sobrenome</label>
-            <input type="text" name="sobrenome" id="sobrenome">
-            </div>
-        </fieldset>
-
-        </div>
-        <label>Email</label>
-        <input type="email" name="email" id="email">
-        </div>
-
-        </div>
-
-        </div>
-    </form>
-
     <!-- Rodapé-->
-
     <section id="contato">
         <div class="meio-contato">
             <h3>Nome da Loja</h3>
@@ -111,7 +108,6 @@
                     <a href="#">Contato</a>
                 </li>
             </ul>
-
         </div>
         <!--meio-contato-->
 
@@ -135,7 +131,7 @@
                 </li>
             </ul>
         </div>
-
+        <!--meio-contato-->
 
         <div class="meio-contato">
             <h3>Shopping</h3>
@@ -157,14 +153,15 @@
                 </li>
             </ul>
         </div>
-
+        <!--meio-contato-->
 
     </section>
-
+    <!--contato-->
 
     <footer class="ultimo-texto">
         <p>© 2022 - nome da loja LTDA. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 
 </html>

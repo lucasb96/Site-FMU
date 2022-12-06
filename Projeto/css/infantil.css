@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +6,11 @@
     text-decoration: none;
     list-style: none;
     border: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
 }
 
 .produto{
@@ -135,38 +140,47 @@ section h1{
 
 /**/
 
-body header{
-    background: rgb(179, 174, 175);
-    color: rgb(59, 57, 57);
-    font-weight: bold;
-    padding: 30px;
-}
+body header {
+	background: rgb(236, 192, 201);
+	color: rgb(59, 57, 57);
+	font-weight: bold;
+	padding: 30px;
+  }
+  
+  header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	position: fixed;
+	background: transparent;
+	transition: all .35s ease;
+  }
+  
+  header h1 {
+	  font-style: italic;
+	  color: #111;
+  }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    position: fixed;
-    background: transparent;
-    transition: all .35s ease;
-    background-color: #fff;
-    padding: 14px 14%;
-}
-
-header h1 {
-    font-style: italic;
-    color: #111;
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 .cabecalho-link {
     display: flex;
     gap: 3rem;
+    background: rgb(236, 192, 201);
 }
 
 .cabecalho-link ul {
@@ -177,15 +191,22 @@ header h1 {
     padding: 10px;
 }
 
+.cabecalho-link li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
 .cabecalho-link a {
     color: #111;
     font-weight: 700;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .cabecalho-link a:hover {
     color: #c8815f;
 }
+
 .icon span {
     padding: 10px;
     font-size: 2rem;
@@ -195,6 +216,7 @@ header h1 {
 .icon span:hover {
     color: #c8815f;
 }
+
 #contato {
     display: flex;
     gap: 5rem;
@@ -204,6 +226,10 @@ header h1 {
     margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+#contato ul {
+    padding-left: 0;
 }
 
 .meio-contato h3 {
@@ -235,6 +261,6 @@ header h1 {
     color: #fff;
 }
 
-
-
-
+.jumbotron{
+    background: linear-gradient(45deg,rgba(29, 236, 197, 0.7),rgba(214, 134, 14, 0.7) 100%);
+}

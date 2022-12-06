@@ -1,28 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/estilo.feminino.css">
-  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.jpeg">
-  <title>Beyond Style Model | Feminino</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.feminino.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.jpeg">
+    <title>Beyond Style Model | Feminino</title>
+    <link rel="stylesheet" href="../bs.feminino/css/bootstrap.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      />
 
+    <link rel="stylesheet" href="../Carrosel/css/mdb.min.css" />
 
-<body>
-  <div class="background">
+  </head>
+  <style>
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100vh;
+    }
+
+    .carousel-item:nth-child(1) {
+      background-image: url('../bs.feminino/img - carousel/coleção_primavera.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .carousel-item:nth-child(2) {
+      background-image: url('..//bs.feminino/img - carousel/coleção pijama - carousel.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .carousel-item:nth-child(3) {
+      background-image: url('../bs.feminino/img - carousel/coleção verão - carousel.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    @media (min-width: 992px) {
+      #introCarousel {
+        margin-top: -58.59px;
+      }
+    }
+
+    .navbar .nav-link {
+      color: #fff !important;
+    }
+  </style>
+  <body>
     <header>
       <div class="logo">
         <h1>Beyond Style Model</h1>
+        <p>Aqui a moda é garantida</p>
       </div>
       <!--Logo-->
 
       <nav class="cabecalho-link">
         <ul>
           <li>
-            <a href="index.html">Início</a>
+            <a href="../php/sistema.php">Início</a>
           </li>
           <li>
             <a href="feminino.html">Feminino</a>
@@ -34,164 +84,225 @@
             <a href="produto.infantil.html">Infantil</a>
           </li>
           <li>
-            <a href="calcacos.html">Calçados</a>
+            <a href="calcados.html">Calçados</a>
           </li>
           <li>
-            <a href="login.html">Login</a>
+            <a href="../php/login.php">Login</a>
           </li>
           <li>
-            <a href="contato.html">Contato</a>
+            <a href="../php/contato.php">Contato</a>
           </li>
           <div class="icon"><span>
               <ion-icon name="bag-handle-outline"></ion-icon>
               <!--<img src="../Imagens/bolsa.svg" alt="Bolsa de Compras">-->
             </span></div>
         </ul>
-
       </nav>
       <!--Cabeçalho Link-->
-
     </header>
 
-    <div class="cta">
-      <h1>Novos Modelos</h1>
-      <h1>Coleção Primavera Verão</h1>
-      <p>Agora também em tamanhos especiais</p>
-      <button>Conheça a nova coleção</button>
+    <div style="margin-top: 5.5%;" id="introCarousel" class="carousel slide
+      carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0"
+          class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+      </ol>
 
-    </div>
-    <!--cta-->
+      <!-- Inner -->
+      <div class="carousel-inner">
 
+        <!-- Foto 1 -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center
+              h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">70% OFF em toda coleção de Primavera</h1>
+                <h5 class="mb-4">Venha conferir!</h5>
+                <a class="btn btn-outline-light btn-lg m-2" href="#"
+                  role="button" rel="nofollow" target="_blank">APROVEITE</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Foto 2 -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center
+              h-100">
+              <div class="text-white text-center" style="margin-top: 20%;">
+                <h1 class="mb-3">Nova coleção</h1>
+                <h5 class="mb-4">Pijamas, Camisolas e Lingeries</h5>
+                <a class="btn btn-outline-light btn-lg m-2" href="#"
+                  role="button" rel="nofollow" target="_blank">CONHEÇA</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  </div>
+        <!-- Foto 3 -->
+        <div class="carousel-item">
+          <div class="mask" style="background: linear-gradient(45deg,
+            rgba(29, 236, 197, 0.7),
+            rgba(214, 134, 14, 0.7) 100%
+            );">
 
+            <div class="d-flex justify-content-center align-items-center
+              h-100">
+              <div class="d-flex justify-content-center align-items-center
+                h-100">
+                <div class="text-white text-center" style="margin-top:
+                  20%;">
+                  <h1 class="mb-3">A COLEÇÃO DE VERÃO CHEGOOU!</h1>
+                  <h5 class="mb-4">Venha conhecer</h5>
+                  <a class="btn btn-outline-light btn-lg m-2" href="#"
+                    role="button" rel="nofollow" target="_blank">CONFIRA</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#introCarousel" role="button"
+          data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button"
+          data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
 
-
-  <section>
-    <div class="container">
-
-      <div class="roupa">
-        <img src="../images/camiseta_3.jpg">
-        <p>Camiseta Beyound Lisa Preta</p>
-        <h4>R$49,99</h4>
-        <ion-icon name="cart-outline"></ion-icon>
 
       </div>
-      <!--roupa-->
+      <section class="">
+        <div class="container">
+
+          <div class="roupa">
+            <img src="../images/camiseta_3.jpg">
+            <p>Camiseta Beyound Lisa Preta</p>
+            <h4>R$49,99</h4>
+            <ion-icon name="cart-outline"></ion-icon>
+
+          </div><!--roupa-->
 
 
-      <div class="roupa">
-        <img src="../images/short.jpg">
-        <p>Short Jeans Cotton Destroyed</p>
-        <h4>R$69,99</h4>
-        <ion-icon name="cart-outline"></ion-icon>
+          <div class="roupa">
+            <img src="../images/short.jpg">
+            <p>Short Jeans Cotton Destroyed</p>
+            <h4>R$69,99</h4>
+            <ion-icon name="cart-outline"></ion-icon>
 
-      </div>
-      <!--roupa-->
-
-
-      <div class="roupa">
-        <img src="../images/conjunto.jpeg">
-        <p>Conjunto Beyond Floral</p>
-        <h4>R$119,99</h4>
-        <ion-icon name="cart-outline"></ion-icon>
-
-      </div>
-      <!--roupa-->
-
-    </div>
-    <!--container-->
+          </div><!--roupa-->
 
 
-  </section>
+          <div class="roupa">
+            <img src="../images/conjunto.jpeg">
+            <p>Conjunto Beyond Floral</p>
+            <h4>R$119,99</h4>
+            <ion-icon name="cart-outline"></ion-icon>
+
+          </div><!--roupa-->
+
+        </div><!--container-->
 
 
-  <section id="contato">
-    <div class="meio-contato">
-      <h3>Nome da Loja</h3>
-      <h5>Nos envie uma mensagem</h5>
-    </div>
-    <!--meio-contato-->
-
-    <div class="meio-contato">
-      <h3>Explore</h3>
-      <ul>
-        <li>
-          <a href="#">Início</a>
-        </li>
-
-        <li>
-          <a href="#">Destaque</a>
-        </li>
-
-        <li>
-          <a href="#">Novo</a>
-        </li>
-
-        <li>
-          <a href="#">Contato</a>
-        </li>
-      </ul>
-
-    </div>
-    <!--meio-contato-->
-
-    <div class="meio-contato">
-      <h3>Empresa</h3>
-      <ul>
-        <li>
-          <a href="#">Sobre nós</a>
-        </li>
-
-        <li>
-          <a href="#">Missão</a>
-        </li>
-
-        <li>
-          <a href="#">Visão</a>
-        </li>
-
-        <li>
-          <a href="#">Valores</a>
-        </li>
-      </ul>
-    </div>
+      </section>
 
 
-    <div class="meio-contato">
-      <h3>Shopping</h3>
-      <ul>
-        <li>
-          <a href="#">Store</a>
-        </li>
+      <section id="contato">
+        <div class="meio-contato">
+          <h3>BEYOND STYLE</h3>
+          <li>
+            <a href="../html/contato.html">Nos envie uma mensagem</a>
+          </li>
+        </div>
+        <!--meio-contato-->
 
-        <li>
-          <a href="#">Trending</a>
-        </li>
+        <div class="meio-contato">
+          <h3>Explore</h3>
+          <ul>
+            <li>
+              <a href="#">Início</a>
+            </li>
 
-        <li>
-          <a href="#">Acessories</a>
-        </li>
+            <li>
+              <a href="#">Destaque</a>
+            </li>
 
-        <li>
-          <a href="#">Sale</a>
-        </li>
-      </ul>
-    </div>
+            <li>
+              <a href="#">Novo</a>
+            </li>
+
+            <li>
+              <a href="#">Formas de pagamento</a>
+            </li>
+          </ul>
+
+        </div>
+        <!--meio-contato-->
+
+        <div class="meio-contato">
+          <h3>Empresa</h3>
+          <ul>
+            <li>
+              <a href="#">Sobre nós</a>
+            </li>
+
+            <li>
+              <a href="#">Missão</a>
+            </li>
+
+            <li>
+              <a href="#">Visão</a>
+            </li>
+
+            <li>
+              <a href="#">Valores</a>
+            </li>
+          </ul>
+        </div>
 
 
-  </section>
+        <div class="meio-contato">
+          <h3>Shopping</h3>
+          <ul>
+            <li>
+              <a href="#">Store</a>
+            </li>
+
+            <li>
+              <a href="#">Trending</a>
+            </li>
+
+            <li>
+              <a href="#">Acessories</a>
+            </li>
+
+            <li>
+              <a href="#">Sale</a>
+            </li>
+          </ul>
+        </div>
 
 
-  <footer class="ultimo-texto">
-    <p>© 2022 - nome da loja LTDA. Todos os direitos reservados.</p>
-  </footer>
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      </section>
 
 
-</body>
+      <footer class="ultimo-texto">
+        <p>© 2022 - Beyond Style LTDA. Todos os direitos reservados.</p>
+      </footer>
 
-</html>
+      <script type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script type="text/javascript" src="../Carrosel/js/mdb.min.js"></script>
+    </body>
+
+  </html>

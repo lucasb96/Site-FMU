@@ -1,45 +1,6 @@
 <?php
 session_start();
 ?>
-<!--include_once('recebetratadados.php');
-if (isset($_POST['cadastrar'])) {
-	print_r('Nome: ' . $_POST['nome']);
-	print_r('<br>');
-	print_r('Genêro: ' . $_POST['genero']);
-	print_r('<br>');
-	print_r('Data de Nascimento: ' . $_POST['datanasc']);
-	print_r('<br>');
-	print_r('CPF: ' . $_POST['cpf']);
-	print_r('<br>');
-	print_r('Telefone: ' . $_POST['telefone']);
-	print_r('<br>');
-	print_r('E-mail: ' . $_POST['email']);
-	print_r('Senha: ' . $_POST['senha']);*/
-	/*$nome = $_POST['nome'];
-	$sexo = $_POST['genero'];
-	$datanasc = $_POST['datanasc'];
-	$cpf = $_POST['cpf'];
-	$telefone = $_POST['telefone'];
-	$email = $_POST['email'];
-	$senha = $_POST['senha'];*/
-
-	/*$comandosql = "INSERT INTO usuario (nome,genero,nasc,cpf,telefone,email,senha) VALUES ('$nome','$sexo','$datanasc','$cpf','$telefone','$email','$senha')";*/
-
-	$resultado = mysqli_query($conn, $comandosql);
-
-	if(mysqli_insert_id($conn)){
-		$_SESSION['msg'] = "<p style='color:blue;'> Usuário Cadastrado com sucesso!";
-	}
-	else {
-		$_SESSION['msg'] = "<p style='color:red;'> Usuário não cadastrado!";
-		echo "Erro ao enviar ao banco <br>";
-		echo 'Código do erro: ' . mysqli_errno($conn) . '<br>';
-		echo 'Mensagem de erro: ' . mysqli_error($conn) . '<br>';
-	}
-
-	/*$result = mysqli_query($conn, "INSERT INTO usuario (nome,genero,nasc,cpf,telefone,email,senha) VALUES ('$nome','$sexo',$datanasc','$cpf','$telefone','$email','$senha')");*/
-}
-?>-->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -61,13 +22,14 @@ if (isset($_POST['cadastrar'])) {
 		<header>
 			<div class="logo">
 				<h1>Beyond Style Model</h1>
+				<p>Aqui a moda é garantida</p>
 			</div>
 			<!--Logo-->
 
 			<nav class="cabecalho-link">
 				<ul>
 					<li>
-						<a href="../html/index.html">Início</a>
+						<a href="sistema.php">Início</a>
 					</li>
 					<li>
 						<a href="../html/feminino.html">Feminino</a>
@@ -79,13 +41,13 @@ if (isset($_POST['cadastrar'])) {
 						<a href="../html/produto.infantil.html">Infantil</a>
 					</li>
 					<li>
-						<a href="../html/calcados.html">Calçados</a>
+						<a href="../html/alcados.html">Calçados</a>
 					</li>
 					<li>
-						<a href="../html/login.html">Login</a>
+						<a href="login.php">Login</a>
 					</li>
 					<li>
-						<a href="../html/contato.html">Contato</a>
+						<a href="contato.php">Contato</a>
 					</li>
 					<div class="icon"><span>
 							<ion-icon name="bag-handle-outline"></ion-icon>
@@ -155,84 +117,85 @@ if (isset($_POST['cadastrar'])) {
 	<!-- Rodapé-->
 
 	<section id="contato">
-		<div class="meio-contato">
-			<h3>Nome da Loja</h3>
-			<h5>Nos envie uma mensagem</h5>
-		</div>
-		<!--meio-contato-->
+        <div class="meio-contato">
+          <h3>BEYOND STYLE</h3>
+          <li>
+            <a href="../html/contato.html">Nos envie uma mensagem</a>
+          </li>
+        </div>
+        <!--meio-contato-->
 
-		<div class="meio-contato">
-			<h3>Explore</h3>
-			<ul>
-				<li>
-					<a href="#">Início</a>
-				</li>
+        <div class="meio-contato">
+          <h3>Explore</h3>
+          <ul>
+            <li>
+              <a href="#">Início</a>
+            </li>
 
-				<li>
-					<a href="#">Destaque</a>
-				</li>
+            <li>
+              <a href="#">Destaque</a>
+            </li>
 
-				<li>
-					<a href="#">Novo</a>
-				</li>
+            <li>
+              <a href="#">Novo</a>
+            </li>
 
-				<li>
-					<a href="#">Contato</a>
-				</li>
-			</ul>
+            <li>
+              <a href="#">Formas de pagamento</a>
+            </li>
+          </ul>
 
-		</div>
-		<!--meio-contato-->
+        </div>
+        <!--meio-contato-->
 
-		<div class="meio-contato">
-			<h3>Empresa</h3>
-			<ul>
-				<li>
-					<a href="#">Sobre nós</a>
-				</li>
+        <div class="meio-contato">
+          <h3>Empresa</h3>
+          <ul>
+            <li>
+              <a href="#">Sobre nós</a>
+            </li>
 
-				<li>
-					<a href="#">Missão</a>
-				</li>
+            <li>
+              <a href="#">Missão</a>
+            </li>
 
-				<li>
-					<a href="#">Visão</a>
-				</li>
+            <li>
+              <a href="#">Visão</a>
+            </li>
 
-				<li>
-					<a href="#">Valores</a>
-				</li>
-			</ul>
-		</div>
-
-
-		<div class="meio-contato">
-			<h3>Shopping</h3>
-			<ul>
-				<li>
-					<a href="#">Store</a>
-				</li>
-
-				<li>
-					<a href="#">Trending</a>
-				</li>
-
-				<li>
-					<a href="#">Acessories</a>
-				</li>
-
-				<li>
-					<a href="#">Sale</a>
-				</li>
-			</ul>
-		</div>
+            <li>
+              <a href="#">Valores</a>
+            </li>
+          </ul>
+        </div>
 
 
-	</section>
+        <div class="meio-contato">
+          <h3>Shopping</h3>
+          <ul>
+            <li>
+              <a href="#">Store</a>
+            </li>
 
+            <li>
+              <a href="#">Trending</a>
+            </li>
+
+            <li>
+              <a href="#">Acessories</a>
+            </li>
+
+            <li>
+              <a href="#">Sale</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </section>
 
 	<footer class="ultimo-texto">
-		<p>© 2022 - nome da loja LTDA. Todos os direitos reservados.</p>
+		<p>© 2022 - Beyond Style LTDA. Todos os direitos reservados.</p>
 	</footer>
 	<script src="../js/validarformulario.js"></script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

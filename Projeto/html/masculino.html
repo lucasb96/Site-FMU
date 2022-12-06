@@ -11,27 +11,29 @@
             href="../images/favicon.jpeg">
         <link rel="stylesheet"
             href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <script src="../js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script type="text/javascrip" src="../js/bootstrap.js"></script>
     </head>
 
     <body>
         <!--Início da barra de navegação-->
         <!-- Fixed navbar -->
+    <header>
         <nav class="navbar fixed-top navbar-expand-lg" id="cabecalho-link">
-            <div class="container">
-                <a class="navbar-brand" href="https://reezhdesign.com">Beyond Style Model</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarMain"
-                    aria-controls="navbarMain" aria-expanded="false"
-                    aria-label="Toggle navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <h1>Beyond Style</h1>
+                        <p>Aqui a moda é garantida</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="index.html">Início</a>
+                            <a class="nav-link active" aria-current="page" href="../php/sistema.php">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="feminino.html">Feminino</a>
@@ -46,57 +48,23 @@
                             <a class="nav-link" href="calcados.html">Calçados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="nav-link" href="../php/login.php">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contato.html">Contato</a>
+                            <a class="nav-link" href="..php/contato.php">Contato</a>
                         </li>
                         <li class="nav-item">
-                        <div class="icon"><span>
-                            <ion-icon name="bag-handle-outline"></ion-icon>
-                        </span>
-                        </div>
+                            <div class="icon"><span>
+                                    <ion-icon name="bag-handle-outline"></ion-icon>
+                                </span>
+                            </div>
                         </li>
-                    </div>
-                        <!--<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"
-                                id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu"
-                                aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another
-                                        action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something
-                                        else here</a></li>
-                            </ul>
-                        </li>-->
-                        
                     </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </nav>
-        <!--<div class="container jumbo">
-            <div class="card bg-light text-dark shadow">
-                <div class="card-body">
-                    <h1 class="card-title">Bootstrap 5 Navbar Slide In On
-                        Scrolldown</h1>
-                    <p class="lead">This example is a quick exercise to
-                        illustrate how the default, static and fixed to top
-                        navbar work. It includes the responsive CSS and HTML, so
-                        it also adapts to your viewport and device.</p>
-                    <p>To see the difference between static and fixed top
-                        navbars, just scroll. This pen has been updated to
-                        Bootstrap 5.1.3</p>
-                    <p class="fs-3">Enjoy!</p>
                 </div>
-            </div>-->
-        </div> <!-- /container -->
+            </div><!-- /container -->
+        </nav>
+    </header>
         <!--Fim da barra de navegação-->
-
 
         <!--Início do Carrossel-->
         <div class="slider">
@@ -109,8 +77,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno01.jpg"
+                                        alt="Terno 01">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -119,8 +90,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno02.jpg"
+                                        alt="Terno 02">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -129,8 +103,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno03.jpg"
+                                        alt="Terno 03">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -139,8 +116,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno04.jpg"
+                                        alt="Terno 04">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -149,8 +129,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno05.jpg"
+                                        alt="Terno 05">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -159,8 +142,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno06.jpg"
+                                        alt="Terno 06">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -169,8 +155,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno07.jpg"
+                                        alt="Terno 07">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -179,8 +168,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno08.jpg"
+                                        alt="Terno 08">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -189,8 +181,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno09.jpg"
+                                        alt="Terno 09">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -199,8 +194,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno10.jpg"
+                                        alt="Terno 10">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -209,8 +207,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno11.jpg"
+                                        alt="Terno 11">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -219,8 +220,11 @@
                             <div class="card-content">
                                 <div class="image">
                                     <img
-                                        src="../images/moletom_preto_600.png"
-                                        alt="">
+                                        src="../images/terno12.jpg"
+                                        alt="Terno 12">
+                                        <figcaption>
+                                            <p>Terno Esporte Fino</p>
+                                        </figcaption>
                                 </div>
                             </div>
                         </div>
@@ -240,7 +244,7 @@
             <section class="gallery">
                 <div class="gallery-row">
                     <div>
-                        <img src="../images/moletom_preto_600.png" alt="">
+                        <img src="../images/moletom_preto_600.png" alt="Moletom Preto">
                         <figcaption>
                             <p>Moletom Preto</p>
                             <h5>R$ 350,00</h5>
@@ -248,7 +252,7 @@
                         </figcaption>
                     </div>
                     <div>
-                        <img src="../images/moletom_cinza_600.jpg" alt="">
+                        <img src="../images/moletom_cinza_600.jpg" alt="Moletom Cinza">
                         <figcaption>
                             <p>Moletom Cinza</p>
                             <h5>R$ 350,00</h5>
@@ -256,7 +260,7 @@
                         </figcaption>
                     </div>
                     <div>
-                        <img src="../images/moletom_marrom_600.jpg" alt="">
+                        <img src="../images/moletom_marrom_600.jpg" alt="Moletom Marrom">
                         <figcaption>
                             <p>Moletom Marrom</p>
                             <h5>R$ 350,00</h5>
@@ -264,7 +268,7 @@
                         </figcaption>
                     </div>
                     <div>
-                        <img src="../images/moletom_pretoo_600.jpg" alt="">
+                        <img src="../images/moletom_pretoo_600.jpg" alt="Moletom Preto">
                         <figcaption>
                             <p>Moletom Preto</p>
                             <h5>R$ 350,00</h5>
@@ -272,7 +276,7 @@
                         </figcaption>
                     </div>
                     <div>
-                        <img src="../images/moletom_gg.jpg" alt="">
+                        <img src="../images/moletom_gg.jpg" alt="Moletom GG">
                         <figcaption>
                             <p>Moletom Preto</p>
                             <h5>R$ 350,00</h5>
@@ -280,7 +284,7 @@
                         </figcaption>
                     </div>
                     <div>
-                        <img src="../images/moletom_grey_600.jpg" alt="">
+                        <img src="../images/moletom_grey_600.jpg" alt="Moletom Cinza">
                         <figcaption>
                             <p>Moletom Cinza</p>
                             <h5>R$ 350,00</h5>
@@ -288,7 +292,7 @@
                         </figcaption>
                     </div>
                     <div>
-                        <img src="../images/moletom_branco.jpg" alt="">
+                        <img src="../images/moletom_branco.jpg" alt="Moletom Branco">
                         <figcaption>
                             <p>Moletom Branco</p>
                             <h5>R$ 350,00</h5>
@@ -296,7 +300,7 @@
                         </figcaption>
                     </div>
                     <div>
-                        <img src="../images/moletom_verde.jpg" alt="">
+                        <img src="../images/moletom_verde.jpg" alt="Moletom Verde">
                         <figcaption>
                             <p>Moletom Verde</p>
                             <h5>R$ 350,00</h5>
@@ -308,12 +312,12 @@
         </main>
 
         <!-- Rodapé-->
-
 			<section id="contato">
 				<div class="meio-contato-mensagem">
-					<h5>Nos envie uma mensagem</h5>
-                    <textarea rows="10" cols="40" maxlength="500"></textarea>
-                    <button id="enviar" type="submit">Enviar</button>
+					<h3>BEYOND STYLE</h3>
+                    <li>
+                        <a href="../html/contato.html">Nos envie uma mensagem</a>
+                    </li>
 				</div>
 				<!--meio-contato-->
 
@@ -330,14 +334,12 @@
 
 						<li>
 							<a href="#">Novo</a>
-						</li>
-
-						<li>
-							<a href="#">Contato</a>
+						</li>	
+                        <li>
+							<a href="#">Formas de pagamento</a>
 						</li>
 					</ul>
-
-				</div>
+                </div>
 				<!--meio-contato-->
 
 				<div class="meio-contato">
@@ -383,10 +385,11 @@
 					</ul>
 				</div>
 			</section>
+    </div>
 
 
 			<footer class="ultimo-texto">
-				<p>© 2022 - nome da loja LTDA. Todos os direitos reservados.</p>
+				<p>© 2022 - Beyond Style LTDA. Todos os direitos reservados.</p>
 			</footer>
 
         <script type="module"

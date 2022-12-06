@@ -6,6 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/infantil.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script> <link rel="stylesheet"
+      href="bootstrap.min.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+
+
     <title>Beyond Style Model | Infatil</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.jpeg">
   </head>
@@ -14,14 +32,15 @@
     <div class="background">
       <header>
         <div class="logo">
-          <h1>Beyond Style Model</h1>
+            <h1>Beyond Style Model</h1>
+            <p>Aqui a moda é garantida</p>
         </div>
         <!--Logo-->
 
         <nav class="cabecalho-link">
           <ul>
             <li>
-              <a href="index.html">Início</a>
+              <a href="sistema.php">Início</a>
             </li>
             <li>
               <a href="feminino.html">Feminino</a>
@@ -36,187 +55,261 @@
               <a href="calcados.html">Calçados</a>
             </li>
             <li>
-              <a href="login.html">Login</a>
+              <a href="../php/login.php">Login</a>
             </li>
             <li>
-              <a href="contato.html">Contato</a>
+              <a href="..php/contato.php">Contato</a>
             </li>
-            <div class="icon">
-              <span>
+            <div class="icon"><span>
                 <ion-icon name="bag-handle-outline"></ion-icon>
                 <!--<img src="../Imagens/bolsa.svg" alt="Bolsa de Compras">-->
-              </span>
-            </div>
+              </span></div>
           </ul>
         </nav>
         <!--Cabeçalho Link-->
       </header>
+    </div>
 
 
+    <div class="produto">
+      <br><br><br><br>
+      <h1> LANÇAMENTOS</h1>
+      <h2> ESPECIAL: MÊS DAS CRIANÇAS</h2>
+      <h3>Os melhores modelos para suas crianças!</h3>
+      <br>
+      <button>Ver novidades</button><br>
 
-      <div class="produto">
-        <h1> LANÇAMENTOS</h1>
-        <h2> ESPECIAL: MÊS DAS CRIANÇAS</h2>
-        <h3>Os melhores modelos para suas crianças!</h3>
-        <button>Ver novidades</button>
+    </div>
+
+
+    <section>
+      <h1>DESTAQUES DA SEMANA</h1>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor in Lorem ipsum dolor ipiscing
+        elit</p>
+      <div class="container-card-1">
+        <div class="cards">
+          <img src="../images/casaco.bebe1.jpg" alt="casaco baby">
+        </div>
+        <div class="cards">
+          <img src="../images/mochila.menina.jpg" alt="mochila infantil">
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="text-cta">
+        <h6>D e c o r a ç ã o</h6>
+        <h4>20% OFF<br>EXCLUSIVO</h4>
+        <a href="#" class="btn">Comprar agora</a>
+      </div>
+    </section>
+    <section>
+      <h1>COLEÇÃO MODA INFANTIL</h1>
+      <div class="container-roupas">
+        <div class="roupa">
+          <img src="../images/touca.infantil1.jpg" alt="touca">
+          <strong>
+            <p>Touca de Lã</p>
+            <h4 id="valor">R$29,90</h4>
+          </strong>
+          <button type="button" id="carrinho" class="btn btn-primary">Comprar</button>
+          <p>Lorem ipsum dolor sit amet, consectetur.<br> Ut enim ad minim
+            veniam, quis laborum. <br>sit amet, consectetur enim ad minim
+            venia</p>
+        </div>
+      </script>
+
+      <div class="roupa">
+        <img src="../images/vestido.infantil1.jpg" alt="vestido infantil
+          menina">
+        <strong>
+          <p>Vestido Feminino</p>
+          <h3>R$55,00</h3>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </strong>
+
+        <p>Lorem ipsum dolor sit amet, consectetur.<br> Ut enim ad minim
+          veniam, quis laborum. <br>sit amet, consectetur enim ad minim venia</p>
       </div>
 
 
-      <section>
-        <h1>DESTAQUES DA SEMANA</h1>
-        <div class="container-card-1">
-          <div class="cards">
-            <img src="../images/casaco.bebe1.jpg" alt="casaco baby">
-          </div>
-          <div class="cards">
-            <img src="../images/mochila.menina.jpg" alt="mochila infantil">
+      <div class="roupa">
+        <img src="../images/roupinha1.jpg" alt="vestido amarelo">
+        <strong>
+          <p>Conjunto Baby</p>
+          <h3>R$38,99</h3>
+        </strong>
+        <button type="button" class="btn btn-primary">Comprar</button>
+        <p>Lorem ipsum dolor sit amet, consectetur.<br> Ut enim ad minim
+          veniam, quis laborum. <br>sit amet, consectetur enim ad minim venia</p>
+      </div>
+      <div class="roupa">
+        <img src="../images/macacao.menina.jpg" alt=" macacao menina">
+        <strong>
+          <p>Macaquinho feminino</p>
+          <h3>R$50,89</h3>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </strong>
+        <p>Lorem ipsum dolor sit amet, consectetur.<br> Ut enim ad minim
+          veniam, quis laborum. <br>sit amet, consectetur enim ad minim venia</p>
+      </div>
+      <div class="roupa">
+        <img src="../images/conjunto.moleton.jpg" alt=" macacao menina">
+        <strong>
+          <p>Conjunto Moleton Children</p>
+          <h3>R$81,50</h3>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </strong>
+        <p>Lorem ipsum dolor sit amet, consectetur.<br> Ut enim ad minim
+          veniam, quis laborum. <br>sit amet, consectetur enim ad minim venia</p>
+      </div>
+      <div class="roupa">
+        <img src="../images/roupa.infantil.jpg" alt="roupa">
+        <strong>
+          <p>Macaquinho Style</p>
+          <h3>R$69,00</h3>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </strong>
+        <p>Lorem ipsum dolor sit amet, consectetur.<br> Ut enim ad minim
+          veniam, quis laborum. <br>sit amet, consectetur enim ad minim venia</p>
+      </div>
+      <div class="roupa">
+        <img src="../images/fantasia.crianca.jpg" alt=" fantasia">
+        <strong>
+          <p>Conjunto Fantasia Halloween</p>
+          <h3>R$120,50</h3>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </strong>
+        <p>Lorem ipsum dolor sit amet, consectetur.<br> Ut enim ad minim
+          veniam, quis laborum. <br>sit amet, consectetur enim ad minim venia</p>
+      </div>
+      <div class="roupa">
+        <img src="../images/calça.menina.jpg" alt=" calça menina">
+        <strong>
+          <p>Calça Jeans Feminina</p>
+          <h3>R$75,50</h3>
+          <button type="button" class="btn btn-primary">Comprar</button>
+        </strong>
+        <ion-icon name="cart-outline"></ion-icon>
+        <p>Lorem ipsum dolor sit amet, consectetur.<br> Ut enim ad minim
+          veniam, quis laborum. <br>sit amet, consectetur enim ad minim venia</p>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>CHRISTMAS - Natal!</h1>
+        <p class="text-center">Confira os lançamentos para as festas de fim de
+          ano!!!</p>
+      </div>
+    </div>
+  </section>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../images/natalino.jpeg" alt="Los Angeles" width="1900"
+            height="500">
+            <div class="carousel-caption">
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="cta">
-        <div class="text-cta">
-          <h6>D e c o r a ç ã o</h6>
-          <h4>20% OFF<br>EXCLUSIVO</h4>
-          <a href="#" class="btn">Comprar agora</a>
-        </div>
-      </section>
+    <section id="contato">
+      <div class="meio-contato">
+        <h3>BEYOND STYLE</h3>
+        <li>
+          <a href="../html/contato.html">Nos envie uma mensagem</a>
+        </li>
+      </div>
+      <!--meio-contato-->
 
-      <section>
-        <h1>COLEÇÃO MODA INFANTIL</h1>
-        <div class="container-roupas">
-          <div class="roupa">
-            <img src="../images/touca.infantil1.jpg" alt="touca">
-            <p>Touca de Lã</p>
-            <h3>R$29,90</h3>
-          </div>
-          <div class="roupa">
-            <img src="../images/vestido.infantil1.jpg" alt="vestido infantil
-              menina">
-            <p>Vestido Feminino</p>
-            <h3>R$55,00</h3>
-          </div>
-          <div class="roupa">
-            <img src="../images/roupinha1.jpg" alt="vestido amarelo">
-            <p>Conjunto Baby</p>
-            <h3>R$38,99</h3>
-          </div>
-          <div class="roupa">
-            <img src="../images/macacao.menina.jpg" alt=" macacao menina">
-            <p>Macaquinho feminino</p>
-            <h3>R$50,89</h3>
-          </div>
+      <div class="meio-contato">
+        <h3>Explore</h3>
+        <ul>
+          <li>
+            <a href="#">Início</a>
+          </li>
 
-          <div class="roupa">
-            <img src="../images/conjunto.moleton.jpg" alt=" macacao menina">
-            <p>Conjunto Moleton Children</p>
-            <h3>R$81,50</h3>
-          </div>
+          <li>
+            <a href="#">Destaque</a>
+          </li>
 
-          <div class="roupa">
-            <img src="../images/roupa.infantil.jpg" alt="roupa">
-            <p>Macaquinho Style</p>
-            <h3>R$69,00</h3>
-          </div>
-          <div class="roupa">
-            <img src="../images/fantasia.crianca.jpg" alt=" fantasia">
-            <p>Conjunto Fantasia Halloween</p>
-            <h3>R$120,50</h3>
-          </div>
-          <div class="roupa">
-            <img src="../images/calça.menina.jpg" alt=" calça menina">
-            <p>Calça Jeans Feminina</p>
-            <h3>R$75,50</h3>
-          </div>
-        </div>
-      </section>
+          <li>
+            <a href="#">Novo</a>
+          </li>
 
-      <section id="contato">
-        <div class="meio-contato">
-          <h3>Nome da Loja</h3>
-          <h5>Nos envie uma mensagem</h5>
-        </div>
-        <!--meio-contato-->
+          <li>
+            <a href="#">Formas de pagamento</a>
+          </li>
+        </ul>
 
-        <div class="meio-contato">
-          <h3>Explore</h3>
-          <ul>
-            <li>
-              <a href="#">Início</a>
-            </li>
+      </div>
+      <!--meio-contato-->
 
-            <li>
-              <a href="#">Destaque</a>
-            </li>
+      <div class="meio-contato">
+        <h3>Empresa</h3>
+        <ul>
+          <li>
+            <a href="#">Sobre nós</a>
+          </li>
 
-            <li>
-              <a href="#">Novo</a>
-            </li>
+          <li>
+            <a href="#">Missão</a>
+          </li>
 
-            <li>
-              <a href="#">Contato</a>
-            </li>
-          </ul>
+          <li>
+            <a href="#">Visão</a>
+          </li>
 
-        </div>
-        <!--meio-contato-->
-        <div class="meio-contato">
-          <h3>Empresa</h3>
-          <ul>
-            <li>
-              <a href="#">Sobre nós</a>
-            </li>
-
-            <li>
-              <a href="#">Missão</a>
-            </li>
-
-            <li>
-              <a href="#">Visão</a>
-            </li>
-
-            <li>
-              <a href="#">Valores</a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a href="#">Valores</a>
+          </li>
+        </ul>
+      </div>
 
 
-        <div class="meio-contato">
-          <h3>Shopping</h3>
-          <ul>
-            <li>
-              <a href="#">Store</a>
-            </li>
+      <div class="meio-contato">
+        <h3>Shopping</h3>
+        <ul>
+          <li>
+            <a href="#">Store</a>
+          </li>
 
-            <li>
-              <a href="#">Trending</a>
-            </li>
+          <li>
+            <a href="#">Trending</a>
+          </li>
 
-            <li>
-              <a href="#">Acessories</a>
-            </li>
+          <li>
+            <a href="#">Acessories</a>
+          </li>
 
-            <li>
-              <a href="#">Sale</a>
-            </li>
-          </ul>
-        </div>
-
-
-      </section>
+          <li>
+            <a href="#">Sale</a>
+          </li>
+        </ul>
+      </div>
 
 
-      <footer class="ultimo-texto">
-        <p>© 2022 - nome da loja LTDA. Todos os direitos reservados.</p>
-      </footer>
+    </section>
+
+
+    <footer class="ultimo-texto">
+      <p>© 2022 - Beyond Style LTDA. Todos os direitos reservados.</p>
+    </footer>
 
 
 
-      <script type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
 
-  </html>
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+
+</html>
